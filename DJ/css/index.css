@@ -18,3 +18,11 @@
     font-family:cursive;
     font-weight: 900; 
 }
+
+.body-container {
+    padding: 100px 0;
+}
+
+.footer-container {
+    background-color: rgb(252, 122, 122);
+}

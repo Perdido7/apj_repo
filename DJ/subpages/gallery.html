@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--Cascade Style Sheet-->
-    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./node_modules/datatables.net-dt/css/jquery.dataTables.css" />
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/gallery.css" />
     <!--Javascript file-->
-    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="./node_modules/datatables.net/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
 
 </head>
 
@@ -26,42 +25,39 @@
             <div>
                 <span id="header-title">Tytuł</span>
             </div>
-            <div><img class="header-image" src="./img/logo.jfif" alt="tEST" /></div>
+            <div><img class="header-image" src="../img/logo.jfif" alt="tEST" /></div>
         </div>
 
         <!-- Body container-->
 
         <div class="body-container">
-            <table id="product-table" class="display">
-                <thead>
-                    <tr>
-                        <th>Nazwa</th>
-                        <th>Producent</th>
-                        <th>Cena</th>
-                        <th>Waga</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pedigree sucha karma</td>
-                        <td>Pedigree</td>
-                        <td>20 zł</td>
-                        <td>5 kg</td>
-                    </tr>
-                    <tr>
-                        <td>Pedigree sucha karma</td>
-                        <td>Pedigree</td>
-                        <td>70 zł</td>
-                        <td>15 kg</td>
-                    </tr>
-                    <tr>
-                        <td>Smaczki Wołowe</td>
-                        <td>Janów Podlaski</td>
-                        <td>40 zł</td>
-                        <td>1.5 kg</td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- Gallery -->
+            <div class="gallery-container row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img src="./img/gallery/zdj1.jfif"
+                        class="shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+                    <img src="./img/gallery/zdj2.jfif"
+                        class="shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./img/gallery/zdj3.jfif"
+                        class="shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                    <img src="./img/gallery/zdj4.jfif"
+                        class="shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./img/gallery/zdj5.jfif"
+                        class="shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                    <img src="./img/gallery/zdj6.jfif"
+                        class="shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+                </div>
+            </div>
+            <!-- Gallery -->
         </div>
 
         <!-- Footer container-->
