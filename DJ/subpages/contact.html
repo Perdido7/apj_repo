@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Cascade Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <!--Javascript file-->
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/contact.js"></script>
+
+</head>
+
+<body>
+    <div style="margin: 0 120px;">
+
+        <!-- Header container -->
+        <div class="header-container">
+            <div>
+                <span id="header-title">Tytuł</span>
+            </div>
+            <div><img class="header-image" src="../img/logo.jfif" alt="tEST" /></div>
+        </div>
+
+        <!-- Body container-->
+        <div id='includedContent'></div>
+
+        <div class="body-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Imię</label>
+                                <input type="text" class="form-control" id="name" placeholder="Imię" required
+                                    maxlength="10" />
+                                <small class="form-text text-muted">Pole do wpisania imienia</small>
+                                <div class="invalid-feedback">Proszę wpisać imię.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nazwisko</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Nazwisko" required />
+                                <small class="form-text text-muted">Pole do wpisania nazwiska</small>
+                                <div class="invalid-feedback">Proszę wpisać nazwisko.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email"
+                                    class="form-control" id="email" placeholder="E-mail" required />
+                                <small class="form-text text-muted">Pole do wpisania adresu e-mail</small>
+                                <div class="invalid-feedback">Proszę wpisać e-mail.</div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Wyślij</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.859681103603!2d16.037145815743326!3d50.77817467952199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470efa29380b2497%3A0x5d366239bbbee97f!2sRomualda%20Traugutta%202%2C%2058-400%20Kamienna%20G%C3%B3ra!5e0!3m2!1spl!2spl!4v1641913960385!5m2!1spl!2spl"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer container-->
+        <div>
+            <footer class="footer-container text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Informacja o stronie</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                                aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Lokalizacja</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                                aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2020 Copyright:
+                    <a class="text-dark" href="">kingCharlesShop.com.pl</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
