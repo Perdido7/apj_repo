@@ -19,14 +19,23 @@
 </head>
 
 <body>
-    <div style="margin: 0 120px;">
+    <div class="main-container">
 
         <!-- Header container -->
         <div class="header-container">
-            <div>
-                <span id="header-title">Tytuł</span>
-            </div>
-            <div><img class="header-image" src="./img/logo.jfif" alt="tEST" /></div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="back-link-style" href="index.html">
+                    <div>
+                        <span id="header-title">Tytuł</span>
+                    </div>
+                    <div class="logo-container"><img class="header-image" src="./img/logo.jfif" alt="tEST" /></div>
+                </a>
+                <div class="navbar-container">
+                    <span class="navbar-brand mb-0 h1">Menu nawigacji</span>
+                    <a class="navbar-brand" target="self" href="./subpages/gallery.html">Galeria</a>
+                    <a class="navbar-brand" target="parent" href="./subpages/contact.html">Kontakt</a>
+                </div>
+            </nav>
         </div>
 
         <!-- Body container-->
